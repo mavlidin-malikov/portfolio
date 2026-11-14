@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavlidin Malikov - Project X</title>
+    <meta name="description" content="Binnenkort beschikbaar: hier verschijnt binnenkort meer informatie over een project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-wit text-gray-800">
+    <div class="max-w-7xl mx-auto px-4 py-4">
+
+        <header class="bg-[url(../assets/images/sfeerbeeld-1-serverkamer.jpg)] bg-cover bg-center bg-gray-600 bg-blend-multiply text-white p-6 rounded-lg mb-6 border-blauw-dik flex flex-wrap items-center justify-between">
+            <div class="flex items-center gap-4">
+                <img src="assets/images/logo.jpg" alt="Logo van Mavlidin Malikov." width="100" height="100" class="rounded-lg object-cover">
+                <div>
+                    <span class="text-2xl font-bold text-white md:text-4xl">Mavlidin Malikov</span>
+                    <p class="text-gray-200">Student Server- en Netwerkbeheer</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="menu-knop" class="peer sr-only">
+            <label for="menu-knop" class="cursor-pointer mx-auto rounded-lg border-blauw-dik px-3 py-2 peer-focus-visible:outline-[#4170b0] peer-focus-visible:outline-offset-2 peer-focus-visible:outline-3 md:hidden">
+                Menu
+            </label>
+
+            <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row md:gap-2">
+                    <li>
+                        <a href="index.html" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white-100 hover:text-white my-focus">Home</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" aria-current="page" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white-100 hover:text-white my-focus">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="project.html" class="block px-2 py-1 rounded-lg bg-blauw text-white font-semibold my-focus">Projecten</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white-100 hover:text-white my-focus">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="grid grid-cols-1 gap-8 py-4 md:grid-cols-4">
+            <main class="md:col-span-3">
+                <h1 class="text-2xl font-bold mb-6 blauw">Project X</h1>
+
+                <section class="grid grid-cols-1 gap-6 mb-8 lg:grid-cols-2">
+                    <figure>
+                        <img src="assets/images/placeholder.png" alt="Tijdelijke voorvertoning van een project" width="800" height="500" class="border-blauw-dik rounded-lg object-cover w-full">
+                        <figcaption>
+                            <h3 class="font-bold text-lg mt-4 mb-2 blauw">Over het project</h3>
+                            <p class="leading-relaxed text-gray-700">
+                                Samen met student Y en student B werkte ik aan Project X. Tijdens dit project leerde ik samenwerken, plannen en technische oplossingen uitwerken.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                    <figcaption>
+                        <h3 class="font-bold text-lg mb-2 blauw">Projectbeschrijving</h3>
+                        <p class="mb-4 leading-relaxed text-gray-700">
+                            Het doel van dit project was om een werkende oplossing te bouwen voor een realistische situatie. Hierbij werd aandacht besteed aan analyse, implementatie en documentatie.
+                        </p>
+                        <p class="leading-relaxed text-gray-700">
+                            Tijdens de ontwikkeling werd gebruikgemaakt van verschillende technologieën en tools die in de opleiding aan bod kwamen.
+                        </p>
+                    </figcaption>
+                    <img src="assets/images/placeholder.png" alt="Tweede screenshot van project" width="800" height="500" class="border-blauw-dik rounded-lg mt-6 object-cover w-full">
+                </figure>
+                </section>
+
+                <section>
+                    <h3 class="font-bold mb-4 text-xl blauw">Extra informatie</h3>
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                        <article class="border-blauw-dik rounded-lg p-4 bg-white shadow-sm">
+                            <h4 class="font-bold mb-2 blauw">Skills</h4>
+                            <p class="text-sm text-gray-700">Probleemoplossend denken en analyseren.</p>
+                        </article>
+                        <article class="border-blauw-dik rounded-lg p-4 bg-white shadow-sm">
+                            <h4 class="font-bold mb-2 blauw">Tools</h4>
+                            <p class="text-sm text-gray-700">Visual Studio Code, Git en GitHub.</p>
+                        </article>
+                        <article class="border-blauw-dik rounded-lg p-4 bg-white shadow-sm">
+                            <h4 class="font-bold mb-2 blauw">Technologieën</h4>
+                            <p class="text-sm text-gray-700">HTML, CSS en Tailwind.</p>
+                        </article>
+                        <article class="border-blauw-dik rounded-lg p-4 bg-white shadow-sm">
+                            <h4 class="font-bold mb-2 blauw">Resultaat</h4>
+                            <p class="text-sm text-gray-700">Werkende oplossing volgens de projectvereisten.</p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="border-blauw-dik rounded-lg p-4 bg-wit shadow-sm">
+                <h2 class="font-bold mb-4 text-xl blauw">Toegepaste vaardigheden</h2>
+                <ul class="mb-6 text-gray-700">
+                    <li>Projectplanning</li>
+                    <li>Samenwerken</li>
+                    <li>Probleemoplossend denken</li>
+                    <li>Documenteren</li>
+                </ul>
+
+                <h2 class="font-bold mb-4 text-xl blauw">Wat ik heb geleerd</h2>
+                <ul class="text-gray-700">
+                    <li>Werken met HTML</li>
+                    <li>Werken met CSS</li>
+                    <li>Structureren van webpagina's</li>
+                    <li>Responsive layouts bouwen</li>
+                </ul>
+            </aside>
+        </div>
+
+        <footer class="border-t border-blauw py-4">
+            <p class="text-gray-600 text-sm text-center">&copy; Mavlidin Malikov</p>
+        </footer>
+    </div>
+</body>
+</html>

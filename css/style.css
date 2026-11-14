@@ -1,0 +1,32 @@
+body {
+    font-family: "Roboto", sans-serif;   
+}
+
+.my-focus:focus-visible {
+  outline: 3px solid #4170b0;
+  outline-offset: 2px;
+}
+
+.blauw {
+    color: #4170b0;
+}
+
+.wit {
+    color: #f9f9f9;
+}
+
+.bg-blauw {
+    background-color: #4170b0;
+}
+
+.bg-wit {
+    background-color: #f9f9f9;
+}
+
+.border-blauw {
+    border-color: #4170b0;
+}
+
+.border-blauw-dik {
+    border: 2px solid #4170b0;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavlidin Malikov - Mijn portfolio</title>
+    <meta name="description" content="Portfolio van Mavlidin Malikov: een selectie van mijn projecten, inclusief contactgegevens voor samenwerkingen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-wit text-gray-800">
+    <div class="max-w-7xl mx-auto px-4 py-4">
+        <header class="bg-[url(../assets/images/sfeerbeeld-1-serverkamer.jpg)] bg-cover bg-center bg-gray-600 bg-blend-multiply text-white p-6 rounded-lg mb-6 border-blauw-dik flex flex-wrap items-center justify-between">
+            <div class="flex items-center gap-4">
+                <img src="assets/images/logo.jpg" alt="Logo van Mavlidin Malikov." width="100" height="100" class="rounded-lg object-cover">
+                <div>
+                    <span class="text-2xl font-bold text-white md:text-4xl">Mavlidin Malikov</span>
+                    <p class="text-gray-200">Student Server- en Netwerkbeheer</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="menu-knop" class="peer sr-only">
+            <label for="menu-knop" class="cursor-pointer mx-auto rounded-lg border-blauw-dik px-3 py-2 peer-focus-visible:outline-[#4170b0] peer-focus-visible:outline-offset-2 peer-focus-visible:outline-3 md:hidden">
+                Menu
+            </label>
+
+            <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row md:gap-2">
+                    <li>
+                        <a href="index.html" class="block px-2 py-1 rounded-lg bg-blauw text-white my-focus">Home</a>
+                    </li>               
+                    <li>
+                        <a href="portfolio.html" aria-current="page" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white-100 hover:text-white my-focus">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="project.html" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white-100 hover:text-white my-focus">Projecten</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white-100 hover:text-white my-focus">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="grid grid-cols-1 gap-8 py-4 md:grid-cols-3">
+            <main class="md:col-span-2">
+                <article>
+                    <h1 class="text-2xl font-bold mb-4 blauw">
+                        System administrator
+                    </h1>
+                    <div class="md:flex">
+                        <img src="assets/images/professionele-foto.jpeg" alt="Portretfoto van Mavlidin Malikov." width="1200" height="800" class="border border-blauw-dik mr-5 mb-5 size-64 rounded-lg object-cover object-top">
+                        <div>
+                        <p class="mb-4 max-w-2xl leading-relaxed">
+                            Hallo, ik ben Mavlidin, eerstejaarsstudent graduaat
+                            server- en netwerkbeheer aan AP Hogeschool.
+                            Ik ben nieuw in de ICT en bouw mijn kennis stap
+                            voor stap op, vanaf de basis.
+                        </p>
+                        <p class="mb-4 max-w-2xl leading-relaxed">
+                            Ik wil graag begrijpen hoe dingen technisch in
+                            elkaar zitten. Wanneer ik iets nieuws leer,
+                            wil ik niet alleen weten wat ik moet doen,
+                            maar ook waarom.
+                        </p>
+                        <p class="mb-4 max-w-2xl leading-relaxed">
+                            Ik ben nieuwsgierig, leergierig en praktisch ingesteld.
+                            Ik zie mijn start in ICT als een kans om veel
+                            bij te leren.
+                        </p>
+                        <p class="max-w-2xl leading-relaxed">
+                            Dit portfolio houdt mijn ontwikkeling tijdens
+                            de opleiding bij.
+                        </p>
+                    </div>
+                    </div>
+                </article>
+            </main>
+
+            <aside class="border-blauw-dik rounded-lg p-4 bg-white shadow-sm">
+                <h2 class="font-bold mb-2 text-xl blauw">
+                    Informatie
+                </h2>
+                <p class="leading-relaxed text-gray-700">
+                    Welkom op mijn portfolio. Hier vind je mijn projecten, opdrachten en ervaringen tijdens de opleiding server- en netwerkbeheer.
+                </p>
+            </aside>
+        </div>
+
+        <footer class="border-t border-blauw py-4">
+            <p class="text-gray-600 text-sm text-center">&copy; Mavlidin Malikov</p>
+        </footer>
+    </div>
+</body>
+</html>
