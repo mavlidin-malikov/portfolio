@@ -31,44 +31,110 @@
             <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto mt-4 md:mt-0">
                 <ul class="flex flex-col md:flex-row md:gap-2">
                     <li>
-                        <a href="index.html" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white-100 hover:text-white my-focus">Home</a>
-                    </li>               
-                    <li>
-                        <a href="portfolio.html" aria-current="page" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white-100 hover:text-white my-focus">Portfolio</a>
+                        <a href="index.html" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white/10 hover:text-white my-focus">Home</a>
                     </li>
                     <li>
-                        <a href="project.html" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white-100 hover:text-white my-focus">Projecten</a>
+                        <a href="portfolio.html" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white/10 hover:text-white my-focus">Portfolio</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="block px-2 py-1 rounded-lg bg-blauw text-white my-focus">Contact</a>
+                        <a href="project.html" class="block px-3 py-2 rounded-lg text-gray-200 hover:bg-white/10 hover:text-white my-focus">Projecten</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" aria-current="page" class="block px-3 py-2 rounded-lg bg-blauw text-white my-focus">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
-    </div>
 
-        <div class="grid grid-cols-1 gap-8 p-4 md:grid-cols-3">
+        <div class="grid grid-cols-1 gap-8 py-4 md:grid-cols-3">
             <main class="md:col-span-2">
-                <h2 class="text-2xl font-bold mb-6 blauw">Contact</h2>
+                <h1 class="text-2xl font-bold mb-4 blauw">Contact</h1>
 
-                <section>
-                    <h3 class="font-bold text-xl mb-6 text-gray-800">Hoe kan je me bereiken?</h3>
-   
+                <section class="mb-4">                   
                     <div class="flex items-center gap-6">
-                        <img src="assets/images/linkedin.svg" alt="" width="40" height="40" class="size-10" aria-hidden="true">
-                        <a href="https://www.linkedin.com/in/mavlidin-malikov-b8357b144/?isSelfProfile=true" target="_blank" class="bg-blue-50 block px-3 py-2 rounded-lg blauw hover:bg-blue-100 font-medium my-focus">
-                            LinkedIn
+                        <img src="assets/images/linkedin.svg" alt="" width="40" height="40" class="size-6" aria-hidden="true">
+                        <a href="https://www.linkedin.com/in/mavlidin-malikov-b8357b144/" target="_blank" rel="noopener noreferrer"
+                            class="knop my-focus block px-4 py-2 rounded-lg font-medium">
+                            LinkedIn <span class="sr-only">(opent in een nieuw tabblad)</span>
                         </a>
                     </div>
                 </section>
+
+                <p class="mb-6 text-gray-700">Stel je vraag over een stage of een project. Velden met een <span class="font-semibold rood">*</span> zijn verplicht.</p>
+
+                <form  name="contact" method="POST" data-netlify="true" class="grid gap-4 md:grid-cols-2">
+                    <div>
+                        <label for="naam" class="block font-medium">Naam <span class="rood" aria-hidden="true">*</span></label>
+                        <input type="text" id="naam" name="naam" autocomplete="name" required
+                            class="veld my-focus mt-1 w-full rounded-lg bg-white px-3 py-2">
+                    </div>
+
+                    <div>
+                        <label for="mail" class="block font-medium">E-mail <span class="rood" aria-hidden="true">*</span></label>
+                        <input type="email" id="mail" name="email" autocomplete="email" required aria-describedby="mail-hulp"
+                            class="veld my-focus peer mt-1 w-full rounded-lg bg-white px-3 py-2">
+                        <p id="mail-hulp" class="mt-1 text-sm text-gray-600">Vul een e-mailadres in zoals naam@voorbeeld.be.</p>
+                        <p class="mt-1 hidden text-sm font-semibold rood peer-user-invalid:block">Dit e-mailadres klopt niet. Vul het in zoals naam@voorbeeld.be.</p>
+                    </div>
+
+                    <div>
+                        <label for="gsm" class="block font-medium">GSM-nummer</label>
+                        <input type="tel" id="gsm" name="gsm" autocomplete="tel" pattern="04[0-9]{8}" title="Tien cijfers, beginnend met 04, zonder spaties" aria-describedby="gsm-hulp"
+                            class="veld my-focus peer mt-1 w-full rounded-lg bg-white px-3 py-2">
+                        <p id="gsm-hulp" class="mt-1 text-sm text-gray-600">Niet verplicht. Tien cijfers zonder spaties, bijvoorbeeld 0412345678.</p>
+                        <p class="mt-1 hidden text-sm font-semibold rood peer-user-invalid:block">Dit nummer klopt niet. Schrijf het zonder spaties: 0412345678.</p>
+                    </div>
+
+                    <div>
+                        <label for="onderwerp" class="block font-medium">Onderwerp</label>
+                        <select name="onderwerp" id="onderwerp"
+                            class="veld my-focus mt-1 w-full rounded-lg bg-white px-3 py-2">
+                            <option value="">Maak een keuze</option>
+                            <option value="stage">Stage</option>
+                            <option value="project">Project</option>
+                            <option value="vraag">Een vraag</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="rounded-lg border border-blauw  bg-white p-4 md:col-span-2">
+                        <legend class="px-2 font-semibold blauw">Hoe wil je antwoord krijgen?</legend>
+                        <div class="mt-1 flex items-center gap-2">
+                            <input type="radio" name="antwoord" id="via-mail" value="mail" checked class="accent-blauw my-focus size-5">
+                            <label for="via-mail">Per e-mail</label>
+                        </div>
+                        <div class="mt-2 flex items-center gap-2">
+                            <input type="radio" name="antwoord" id="via-telefoon" value="telefoon" class="accent-blauw my-focus size-5">
+                            <label for="via-telefoon">Per telefoon</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="md:col-span-2">
+                        <label for="bericht" class="block font-medium">Je bericht <span class="rood" aria-hidden="true">*</span></label>
+                        <textarea name="bericht" id="bericht" rows="5" required minlength="10" aria-describedby="bericht-hulp"
+                            class="veld my-focus peer mt-1 w-full rounded-lg bg-white px-3 py-2"></textarea>
+                        <p id="bericht-hulp" class="mt-1 text-sm text-gray-600">Schrijf minstens tien tekens.</p>
+                        <p class="mt-1 hidden text-sm font-semibold rood peer-user-invalid:block">Je bericht is te kort. Schrijf minstens tien tekens.</p>
+                    </div>
+
+                    <div class="flex items-center gap-2 md:col-span-2">
+                        <input type="checkbox" name="toestemming" id="toestemming" value="ja" required class="accent-blauw my-focus size-5">
+                        <label for="toestemming">Ik ga akkoord dat mijn bericht wordt gelezen <span class="rood" aria-hidden="true">*</span></label>
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <button type="submit" class="knop my-focus rounded-lg px-4 py-2 font-semibold">Verstuur</button>
+                        <p class="mt-3 text-sm text-gray-600">Ik gebruik je gegevens enkel om je te antwoorden.</p>
+                    </div>
+                </form>
+                
             </main>
 
-            <aside class="border-blauw-dik rounded-lg p-4 bg-white shadow-sm">
-                <h2 class="font-bold mb-4 text-xl blauw">Waar ben ik?</h2>
+            <aside class="border-blauw-dik rounded-lg p-4 bg-wit shadow-sm self-start">
+                <h2 class="font-bold mb-4 text-xl blauw">Waar vind je mij?</h2>
                 <p class="mb-4 leading-relaxed text-gray-700">
-                    Ik woon in Antwerpen, niet ver van het station van Berchem.
+                    Ik ben gevestigd in Antwerpen-Berchem, vlak bij het treinstation.
                 </p>
-                <img src="assets/images/berchem-map.jpg" alt="Kaart van Antwerpen Berchem." width="600" height="600" class="rounded-lg border-blauw w-full object-cover">
+                <img src="assets/images/berchem-map.jpg" alt="Kaart van Antwerpen Berchem." width="600" height="600" class="rounded-lg border border-blauw w-full object-cover">
             </aside>
         </div>
 

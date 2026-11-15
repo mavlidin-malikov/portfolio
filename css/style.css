@@ -30,3 +30,32 @@ body {
 .border-blauw-dik {
     border: 2px solid #4170b0;
 }
+
+
+.knop {
+    background-color: #4170b0;
+    color: #f9f9f9;
+    cursor: pointer;
+}
+
+.knop:hover {
+    filter: brightness(0.9);
+}
+
+
+.veld {
+    border: 1px solid #4170b0;
+}
+
+.veld:user-invalid {
+    border-color: #b91c1c;
+}
+
+
+.accent-blauw {
+    accent-color: #4170b0;
+}
+
+.rood {
+    color: #b91c1c;
+}
